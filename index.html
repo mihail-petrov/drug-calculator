@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="theme-color" content="#3367D6">
+    <title>Food For Healt</title>
+
+    <!-- <link rel="manifest" href="./manifest.json"> -->
+    <link rel="apple-touch-icon" href="icon.png">
+
+    <link href="./assets/css/fontawesome.css" rel="stylesheet">
+    <link href="./assets/css/brands.css" rel="stylesheet">
+    <link href="./assets/css/solid.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+
+    <div id="wrapper">
+
+        <div style="display: flex;border-bottom: solid #dedede 1px; padding-bottom: 12px;">
+            <div class="app-avatar">
+                <i style="margin: auto" class="fa-solid fa-pills"></i>
+            </div>
+            <div>
+                <div class="app-header">Calculate drug</div>
+            </div> 
+        </div>
+
+        <div class="block">
+            
+            <div class="block-label">Animal mass</div>
+
+            <div style="position: relative;">
+                <input id="input-animal-mass" class="input" type="number" style="padding-left: 36px">
+                <i style="position: absolute; left: 12px; top: 10px;" class="fa-solid fa-weight-scale"></i>
+            </div>
+
+        </div>
+
+        <div class="block">
+
+            <div class="block-label">Drug supliment</div>
+            <div class="dropdown">
+                <dropdown-component collection="drugCollection"></dropdown-component>
+            </div>
+        </div>
+
+
+        <div class="card">
+
+            <div style="display: flex; justify-content: space-between; border-bottom   : dashed #0066dd 1px; margin-bottom: 16px;">
+                <div class="card-header">Prevomax</div>
+
+                <div style="background: #4485f5; color: #fff;padding: 5px 12px;display: inline-block;height: 28px;border-radius: 3px; margin-top: 11px;">
+                    Add
+                </div>
+            </div>
+            
+            <div class="card-element">
+                <div class="card-element--key">Active substance</div>
+                <div style="font-weight: bold">Maropitant</div>
+            </div>
+            
+            <div class="card-element">
+                <div class="card-element--key">Substance dose</div>
+                <div style="font-weight: bold">1 ml / kg</div>
+            </div>
+
+            <div class="card-element">
+                <div class="card-element--key">Concentration</div>
+                <div style="font-weight: bold">10 ml</div>
+            </div>     
+            
+            <div class="card-element">
+                <div class="card-element--key">Application method</div>
+                <div style="font-weight: bold">SC, IV q24h</div>
+            </div>                 
+        </div>
+
+
+        <div class="block">
+            <div class="block-label" style="font-size: 22px">Drug list</div>
+        </div>
+
+        <div class="card">
+
+
+            <div style="display: flex; justify-content: space-between; border-bottom   : dashed #0066dd 1px; margin-bottom: 16px;">
+                <div class="card-header">Prevomax x 2</div>
+
+                <div style="background: #d60b52; color: #fff;padding: 5px 12px;display: inline-block;height: 28px;border-radius: 3px; margin-top: 11px;">
+                    Remove
+                </div>
+            </div>
+
+            <div class="card-element">
+                <div class="card-element--key">Active substance</div>
+                <div style="font-weight: bold">Maropitant</div>
+            </div>
+
+            <div class="card-element">
+                <div class="card-element--key">Substance dose</div>
+                <div style="font-weight: bold">1 ml / kg</div>
+            </div>
+
+            <div class="card-element">
+                <div class="card-element--key">Concentration</div>
+                <div style="font-weight: bold">10 ml</div>
+            </div>     
+            
+            <div class="card-element">
+                <div class="card-element--key">Application method</div>
+                <div style="font-weight: bold">SC, IV q24h</div>
+            </div>                 
+        </div>
+
+        <div class="card">
+
+            <div style="display: flex; justify-content: space-between; border-bottom   : dashed #0066dd 1px; margin-bottom: 16px;">
+                <div class="card-header">Cerenia</div>
+
+                <div style="background: #d60b52; color: #fff;padding: 5px 12px;display: inline-block;height: 28px;border-radius: 3px; margin-top: 11px;">
+                    Remove
+                </div>
+            </div>
+
+            <div class="card-element">
+                <div class="card-element--key">Active substance</div>
+                <div style="font-weight: bold">Maropitant</div>
+            </div>            
+                        
+            <div class="card-element">
+                <div class="card-element--key">Substance dose</div>
+                <div style="font-weight: bold">1 ml / kg</div>
+            </div>
+
+            <div class="card-element">
+                <div class="card-element--key">Concentration</div>
+                <div style="font-weight: bold">10 ml</div>
+            </div>     
+            
+            <div class="card-element">
+                <div class="card-element--key">Application method</div>
+                <div style="font-weight: bold">SC, IV q24h</div>
+            </div>                 
+        </div>        
+
+    </div>
+    
+    <script src="drug.collection.js"></script>
+    <script src="pubsub.js"></script>
+    <script src="dropdown.script.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

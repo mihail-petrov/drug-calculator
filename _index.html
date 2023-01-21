@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="theme-color" content="#3367D6">
+    <title>Food For Healt</title>
+
+    <!-- <link rel="manifest" href="./manifest.json"> -->
+    <link rel="apple-touch-icon" href="icon.png">
+
+    <link href="./assets/css/fontawesome.css" rel="stylesheet">
+    <link href="./assets/css/brands.css" rel="stylesheet">
+    <link href="./assets/css/solid.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+
+    <div id="wrapper">
+
+        <div style="display: flex;border-bottom: solid #dedede 1px; padding-bottom: 12px;">
+            <div class="app-avatar">
+                <i style="margin: auto" class="fa-solid fa-pills"></i>
+            </div>
+            <div>
+                <div class="app-header">Calculate drug</div>
+            </div> 
+        </div>
+
+        <div class="block">
+            <div class="block-label">Animal mass</div>
+            <div style="position: relative">
+                <input id="input-animal-mass" class="input" type="number" style="padding-left: 36px">
+                <i style="position: absolute; left: 12px; top: 10px;" class="fa-solid fa-weight-scale"></i>
+            </div>
+
+        </div>
+
+        <div class="block">
+            <div class="block-label">Drug supliment</div>
+            <div class="dropdown">
+                <dropdown-component collection="drugCollection"></dropdown-component>
+            </div>
+        </div>
+
+
+        <div style="background: #ffe9d4; border: solid #dedede 1px; margin-top: 16px; font-family: Roboto; padding: 6px; border-radius: 5px;">
+            <div style="border-bottom: solid #0066dd 1px; font-size: 22px;margin-bottom: 9px;">Prevomax</div>
+            
+            <div style="display: flex; justify-content: space-between; margin-top: 6px;">
+                <div style="">Active substance</div>
+                <div style="font-weight: bold">Maropitant</div>
+            </div>
+            
+            <div style="display: flex; justify-content: space-between; margin-top: 6px;">
+                <div style="">Substance dose</div>
+                <div style="font-weight: bold">1 ml</div>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; margin-top: 6px;">
+                <div style="">Concentration</div>
+                <div style="font-weight: bold">10 ml</div>
+            </div>     
+            
+            <div style="display: flex; justify-content: space-between; margin-top: 6px;">
+                <div style="">Application method</div>
+                <div style="font-weight: bold">SC, IV q24h</div>
+            </div>                 
+        </div>
+
+        <div style="padding: 8px; color: #fff; background-color: #0066dd; text-align: center; font-family: Roboto; margin-top: 24px; font-weight: bold; border-radius: 3px;">Add to list</div>
+
+    </div>
+    
+    <script src="dropdown.script.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
